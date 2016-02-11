@@ -17,14 +17,15 @@
 </header>
 <div class="menu-001">
     <div class="container list-inline">
+        <div class="row">
         <a href="/" class="">
               <img src="img/logo.png">
         </a>
         <ul class="nav navbar-nav navbar-right">
             <li><a href="#">О компании</a></li>
             <li><a href="#">Прайс</a></li>
-            <li><a href="#">Услуги</a></li>
-                <ul>
+            <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Услуги<b class="caret"></b></a>
+                <ul class="dropdown-menu">
                     <li><a href="#">Грузоперевозки</a></li>
                     <li class="dropdown"><a href="#" class="dropdown-menu">Аренда автотранспорта</a>
                         <ul class="dropdown-menu">
@@ -45,19 +46,41 @@
                     <li>Аренда земли</li>
                     <li>Страхование грузов</li>  
                 </ul>
-            <li>Документы</li>
+            </li>
+            <li><a href="#">Документы</a></li>
         </ul>
-    </div>
-</div>
-
-<div class="gallery-001">
-    <div class="container">
-        <h1>Галерея</h1>
-        <div></div>
-        <div class="pull-right">
-          <a href="#" class="btn btn-primary btn-lg">Все фотографии</a>
         </div>
     </div>
 </div>
+<div class="gallery-001">
+    <div class="container">
+        <div class="row">
+        <hr>
+        <h1>Галерея</h1>
+       
+                <div class="col-lg-4">
+                   <p><a href="/" class=""><img src="img/Pic1.jpg"></a></p>
+                   <p><a href="/" class=""><img src="img/Pic2.jpg"></a></p>
+                </div>
+                <div class="col-lg-4">
+                   <p> <a href="/" class=""><img src="img/Pic3.jpg"></a></p>
+                   <p> <a href="/" class=""><img src="img/Pic4.jpg"></a></p>
+                    <p><a href="/" class=""><img src="img/Pic5.jpg"></a></p>
+                </div>
+                <div class="col-lg-4">
+                   <p> <a href="/" class=""><img src="img/Pic6.jpg"></a></p>
+                   <p> <a href="/" class=""><img src="img/Pic7.jpg"></a></p>
+                </div>
+        </div>
+        
+        <div class="pull-right">
+          <p><a href="#" class="btn btn-primary btn-lg">Все фотографии</a></p>
+        </div>
+        
+    </div>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </body>
 </html>
