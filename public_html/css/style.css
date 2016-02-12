@@ -127,9 +127,6 @@
     padding: 0;
     margin: 0;
     border: 0;
-    border-radius: 4px;
-    -webkit-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
 }
 .gallery-001  .thumbnail.pad-t-r {
     padding: 10px 0 0 0;
@@ -141,9 +138,11 @@
     padding: 10px 0 10px 0;
 }
 .gallery-001  span a.thumbnail>img:hover {
-    opacity: 0.75;
-    filter: alpha(opacity=30);
-    background: #113873;
+   content: "";
+   display: block;
+   position: absolute;
+   background:red;
+   opacity: .2;
 }
 .work-effect-pos {
     position: relative;
