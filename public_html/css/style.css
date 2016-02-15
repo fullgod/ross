@@ -1,36 +1,3 @@
-// FONTS
-
-/* font-family: "LatoRegular"; */
-@font-face {
-    font-family: "LatoRegular";
-    src: url("../fonts/LatoRegular/LatoRegular.eot");
-    src: url("../fonts/LatoRegular/LatoRegular.eot?#iefix")format("embedded-opentype"),
-    url("../fonts/LatoRegular/LatoRegular.woff") format("woff"),
-    url("../fonts/LatoRegular/LatoRegular.ttf") format("truetype");
-    font-style: normal;
-    font-weight: normal;
-}
-/* font-family: "LatoBold"; */
-@font-face {
-    font-family: "LatoBold";
-    src: url("../fonts/LatoBold/LatoBold.eot");
-    src: url("../fonts/LatoBold/LatoBold.eot?#iefix")format("embedded-opentype"),
-    url("../fonts/LatoBold/LatoBold.woff") format("woff"),
-    url("../fonts/LatoBold/LatoBold.ttf") format("truetype");
-    font-style: normal;
-    font-weight: normal;
-}
-/* font-family: "LatoItalic"; */
-@font-face {
-    font-family: "LatoItalic";
-    src: url("../fonts/LatoItalic/LatoItalic.eot");
-    src: url("../fonts/LatoItalic/LatoItalic.eot?#iefix")format("embedded-opentype"),
-    url("../fonts/LatoItalic/LatoItalic.woff") format("woff"),
-    url("../fonts/LatoItalic/LatoItalic.ttf") format("truetype");
-    font-style: normal;
-    font-weight: normal;
-}
-/* font-family: "LatoLight"; */
 @font-face {
     font-family: "LatoLight";
     src: url("../fonts/LatoLight/LatoLight.eot");
@@ -40,62 +7,125 @@
     font-style: normal;
     font-weight: normal;
 }
-/* font-family: "LatoBoldItalic"; */
 @font-face {
-    font-family: "LatoBoldItalic";
-    src: url("../fonts/LatoBoldItalic/LatoBoldItalic.eot");
-    src: url("../fonts/LatoBoldItalic/LatoBoldItalic.eot?#iefix")format("embedded-opentype"),
-    url("../fonts/LatoBoldItalic/LatoBoldItalic.woff") format("woff"),
-    url("../fonts/LatoBoldItalic/LatoBoldItalic.ttf") format("truetype");
+    font-family: "OpenSansLight";
+    src: url("../fonts/OpenSansLight/OpenSansLight.eot");
+    src: url("../fonts/OpenSansLight/OpenSansLight.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/OpenSansLight/OpenSansLight.woff") format("woff"),
+    url("../fonts/OpenSansLight/OpenSansLight.ttf") format("truetype");
     font-style: normal;
     font-weight: normal;
 }
-/* font-family: "LatoLightItalic"; */
 @font-face {
-    font-family: "LatoLightItalic";
-    src: url("../fonts/LatoLightItalic/LatoLightItalic.eot");
-    src: url("../fonts/LatoLightItalic/LatoLightItalic.eot?#iefix")format("embedded-opentype"),
-    url("../fonts/LatoLightItalic/LatoLightItalic.woff") format("woff"),
-    url("../fonts/LatoLightItalic/LatoLightItalic.ttf") format("truetype");
-    font-style: normal;
-    font-weight: normal;
+  font-family: "LatoLight";
+  font-family: "LatoRegular";
+  font-family: "OpenSansLight";
+  font-family: "OpenSansRegular";
+  src: url("../fonts/LatoLight/LatoLight.eot?#iefix") format("embedded-opentype"), url("../fonts/LatoLight/LatoLight.woff") format("woff"), url("../fonts/LatoLight/LatoLight.ttf") format("truetype");
+  src: url("../fonts/LatoLight/LatoLight.eot");
+  src: url("../fonts/LatoRegular/LatoRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/LatoRegular/LatoRegular.woff") format("woff"), url("../fonts/LatoRegular/LatoRegular.ttf") format("truetype");
+  src: url("../fonts/LatoRegular/LatoRegular.eot");
+  src: url("../fonts/OpenSansLight/OpenSansLight.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSansLight/OpenSansLight.woff") format("woff"), url("../fonts/OpenSansLight/OpenSansLight.ttf") format("truetype");
+  src: url("../fonts/OpenSansLight/OpenSansLight.eot");
+  src: url("../fonts/OpenSansRegular/OpenSansRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSansRegular/OpenSansRegular.woff") format("woff"), url("../fonts/OpenSansRegular/OpenSansRegular.ttf") format("truetype");
+  src: url("../fonts/OpenSansRegular/OpenSansRegular.eot");
+  font-style: normal;
+  font-weight: normal;
 }
-
 
 .header-001 {
-    padding: 8px 0;
+  padding: 8px 0;
 }
 .header-001 li {
-    padding-left: 30px;
-    font-family: 'LatoLight', sans-serif;
-    font-weight: 400;
-    font-size: 14px;
+  font-family: 'LatoLight', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  padding-left: 30px;
 }
 
 .menu-001 {
-    background-color:#1b365b;
-    padding: 8px 0;
-    
+  background-color: #1b365b;
+  padding: 0;
 }
-.menu-001 .nav>li>a {
-    position: relative;
-    display: block;
-    padding: 10px 15px;
+.menu-001 .logo img {
+    padding: 10px 0;
 }
-.menu-001 a {
-    color:#fff;
+.menu-001 .nav > li > a {
+  color: #ffffff;
+  display: block;
+  font-family: 'OpenSansLight', sans-serif;
+  font-size: 16px;
+  padding: 20px 20px;
+  position: relative;
 }
-.gallery-001 {
-    
+.menu-001 .navbar-nav > li > .dropdown-menu {
+  background-color: #10294f;
+  border-top: 3px solid #2964bc;
+  left: -66%;
+  padding: 15px 13px 15px 20px;
 }
-.gallery-001 hr {
-    border-top: 2px solid #d8354c;
-    margin: 0;
+.menu-001 .navbar-nav > li > .dropdown-menu:after, 
+.menu-001 .navbar-nav > li > .dropdown-menu:before {
+  border-bottom-color: #ffffff;
+  border-color: rgba(255, 255, 255, 0);
+  border-width: 7px;
+  border: solid transparent;
+  bottom: 100%;
+  content: " ";
+  height: 0;
+  left: 50%;
+  margin-left: -7px;
+  position: absolute;
+  width: 0;
+}
+.menu-001 .navbar-nav > li > .dropdown {
+  left: 0;
+  margin-left: 3px;
+  position: absolute;
+  top: 0;
+}
+.menu-001 .dropdown-menu > li > a {
+  color: #ffffff;
+  font-family: 'OpenSansRegular', sans-serif;
+  font-size: 15px;
+}
+.menu-001 .dropdown-menu > li > a:hover, 
+.menu-001 .dropdown-menu > li > a:focus{
+  background-color: transparent;
+  color: #4c7eca;
+}
+.menu-001 .nav > li > a:hover,
+.menu-001 .nav > li > a:focus,
+.menu-001 .nav .open > a,
+.menu-001 .nav .open > a:hover,
+.menu-001 .nav .open > a:focus {
+  background-color: transparent;
+  color: #64b5f6;
+  text-decoration: none;
 }
 
-.dropdown-submenu{position:relative;}
-.dropdown-submenu>.dropdown-menu{top:0;left:100%;margin-top:-6px;margin-left:-1px;-webkit-border-radius:0 6px 6px 6px;-moz-border-radius:0 6px 6px 6px;border-radius:0 6px 6px 6px;}
-.dropdown-submenu:hover>.dropdown-menu{display:block;}
-.dropdown-submenu>a:after{display:block;content:" ";float:right;width:0;height:0;border-color:transparent;border-style:solid;border-width:5px 0 5px 5px;border-left-color:#cccccc;margin-top:5px;margin-right:-10px;}
-.dropdown-submenu:hover>a:after{border-left-color:#ffffff;}
-.dropdown-submenu.pull-left{float:none;}.dropdown-submenu.pull-left>.dropdown-menu{left:-100%;margin-left:10px;-webkit-border-radius:6px 0 6px 6px;-moz-border-radius:6px 0 6px 6px;border-radius:6px 0 6px 6px;}
+.gallery-001 .row {
+  border-top: 2px solid #d8354c;
+}
+.gallery-001 .thumbnail {
+    display: block;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+.gallery-001 .thumbnail.pad-t-r {
+    padding: 10px 0 0 0;
+}
+.gallery-001 .thumbnail.pad-t-b {
+    padding: 10px 0 10px 0;
+}
+.gallery-001 .thumbnail.pad-l-t {
+    padding: 10px 0 10px 0;
+}
+.gallery-001  span a.thumbnail>img:hover {
+   content: "";
+   display: block;
+   position: absolute;
+   background:red;
+   opacity: .2;
+}
