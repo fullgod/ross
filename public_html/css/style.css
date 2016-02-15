@@ -16,22 +16,6 @@
     font-style: normal;
     font-weight: normal;
 }
-@font-face {
-  font-family: "LatoLight";
-  font-family: "LatoRegular";
-  font-family: "OpenSansLight";
-  font-family: "OpenSansRegular";
-  src: url("../fonts/LatoLight/LatoLight.eot?#iefix") format("embedded-opentype"), url("../fonts/LatoLight/LatoLight.woff") format("woff"), url("../fonts/LatoLight/LatoLight.ttf") format("truetype");
-  src: url("../fonts/LatoLight/LatoLight.eot");
-  src: url("../fonts/LatoRegular/LatoRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/LatoRegular/LatoRegular.woff") format("woff"), url("../fonts/LatoRegular/LatoRegular.ttf") format("truetype");
-  src: url("../fonts/LatoRegular/LatoRegular.eot");
-  src: url("../fonts/OpenSansLight/OpenSansLight.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSansLight/OpenSansLight.woff") format("woff"), url("../fonts/OpenSansLight/OpenSansLight.ttf") format("truetype");
-  src: url("../fonts/OpenSansLight/OpenSansLight.eot");
-  src: url("../fonts/OpenSansRegular/OpenSansRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSansRegular/OpenSansRegular.woff") format("woff"), url("../fonts/OpenSansRegular/OpenSansRegular.ttf") format("truetype");
-  src: url("../fonts/OpenSansRegular/OpenSansRegular.eot");
-  font-style: normal;
-  font-weight: normal;
-}
 
 .header-001 {
   padding: 8px 0;
@@ -107,12 +91,58 @@
 .gallery-001 .row {
   border-top: 2px solid #d8354c;
 }
-.gallery-001 .thumbnail {
-    display: block;
-    padding: 0;
-    margin: 0;
-    border: 0;
+.gallery-001 [class*="-4"] {
+	padding-left:0;
+    padding-right:0;
 }
+.gallery-001 h1 {
+	padding-top: 45px;
+	font-family: 'LatoLight', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: #184e9f;
+    padding-bottom: 38px;
+    margin: 0;
+    line-height: 1;
+}
+.gallery-001 .thumbnail span {
+    position: absolute;
+    display: block;
+    text-align: center;
+    top: 50%;
+    left: 0;
+    right: 0;
+    font-size: 6rem;
+    color: #fff;
+    text-shadow: 0 0 3rem #2964bc);
+    opacity: 0;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.gallery-001 .thumbnail{
+    position: relative;
+    display: block;
+    border: 0;
+    padding: 0;
+    margin: 10px 5px;
+    background-color: #2964bc;
+}
+.gallery-001 .thumbnail img {
+    display: block;
+    width: 100%;
+    transition: opacity .2s linear;
+}
+.gallery-001 .thumbnail:hover img {
+    opacity: .25;
+}
+.gallery-001 .thumbnail:hover span {
+  opacity: 1;
+}
+
+
+
 .gallery-001 .thumbnail.pad-t-r {
     padding: 10px 0 0 0;
 }
@@ -121,11 +151,4 @@
 }
 .gallery-001 .thumbnail.pad-l-t {
     padding: 10px 0 10px 0;
-}
-.gallery-001  span a.thumbnail>img:hover {
-   content: "";
-   display: block;
-   position: absolute;
-   background:red;
-   opacity: .2;
 }
