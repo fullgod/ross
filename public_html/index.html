@@ -4,21 +4,8 @@
 	<title>title</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<link href="css/bootstrap.min.css" rel="stylesheet" />
-	<link rel="stylesheet" type="text/css" href="css/style.css" />    
-    <script type='text/javascript'>
-            (function($){
-            $(document).ready(function(){
-            $('ul.dropdown-menu [data-toggle=dropdown]').on('click', function(event) {
-            event.preventDefault(); 
-            event.stopPropagation(); 
-            $(this).parent().siblings().removeClass('open');
-            $(this).parent().toggleClass('open');
-            });
-            });
-            })(jQuery);
-     </script>
-
-
+	<link rel="stylesheet" type="text/css" href="css/style.css" />   
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">	
 </head>
 <body>
 <header class="header-001">
@@ -41,7 +28,7 @@
             <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">Услуги<b class="caret"></b></a>
                 <ul class="dropdown-menu">
                     <li><a href="#">Грузоперевозки</a></li>
-                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Аренда автотранспорта</a>
+                    <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">Аренда автотранспорта</a>
                         <ul class="dropdown-menu">
                             <li><a href="#">Самосвалы</a></li>
                             <li><a href="#">Газель</a></li>
@@ -82,7 +69,11 @@
                 </div>
                 <div class="col-lg-4">
                    <span><a href="#" class="thumbnail"><img src="img/Pic6.jpg"></a></span>
-                   <span><a href="#" class="thumbnail pad-l-t"><img src="img/Pic7.jpg"><b class="caret"></b></a></span>
+                   <a href="#" class="thumbnail pad-l-t">
+                       <p><img src="img/Pic7.jpg"></p>
+                       <span class="glyphicons glyphicons-search"></span>
+					   <i class="fa fa-search"></i>
+                   </a>
                 </div>
         </div>
         
@@ -95,5 +86,14 @@
 </div>
 <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="js/scripts.js"></script>
 </body>
 </html>
+
+//http://demo.magikthemes.com/index.php/fabiademo4#
+//http://mas1.magikcommerce.com/index.php/elantrademo3
+//http://bootstraptour.com/
+//http://www.bootply.com/like/dropdown
+//http://jsfiddle.net/orr3cmgz/
+//http://developer.rosait.ru/test-work
+//http://trendy.themes.tvda.eu/
