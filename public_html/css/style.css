@@ -112,9 +112,8 @@
     top: 50%;
     left: 0;
     right: 0;
-    font-size: 6rem;
-    color: #fff;
-    text-shadow: 0 0 3rem #2964bc);
+    font-size: 3.8rem;
+    color: #FAFAFA;
     opacity: 0;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
@@ -127,7 +126,7 @@
     border: 0;
     padding: 0;
     margin: 10px 5px;
-    background-color: #2964bc;
+    background-color: #113873;
 }
 .gallery-001 .thumbnail img {
     display: block;
