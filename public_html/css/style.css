@@ -45,8 +45,16 @@
 .menu-001 .navbar-nav > li > .dropdown-menu {
   background-color: #10294f;
   border-top: 3px solid #2964bc;
-  left: -66%;
+  left: 0;
+  right: auto;
   padding: 15px 13px 15px 20px;
+}
+.menu-001 .dropdown-menu.bullet {
+    margin-top: 8px;
+}
+.menu-001 .dropdown-menu.pull-center {
+    right: 50%;
+    left: auto;
 }
 .menu-001 .navbar-nav > li > .dropdown-menu:after, 
 .menu-001 .navbar-nav > li > .dropdown-menu:before {
@@ -130,7 +138,8 @@
 }
 .gallery-001 .thumbnail img {
     display: block;
-    width: 100%;
+    min-width: 380px;
+    height: 100%;
     transition: opacity .2s linear;
 }
 .gallery-001 .thumbnail:hover img {
@@ -139,15 +148,11 @@
 .gallery-001 .thumbnail:hover span {
   opacity: 1;
 }
-
-
-
-.gallery-001 .thumbnail.pad-t-r {
-    padding: 10px 0 0 0;
+.gallery-001  .carousel {
+    margin: 5px 5px;
 }
-.gallery-001 .thumbnail.pad-t-b {
-    padding: 10px 0 10px 0;
-}
-.gallery-001 .thumbnail.pad-l-t {
-    padding: 10px 0 10px 0;
+.gallery-001  .carousel-inner>.item>img, 
+.gallery-001 .carousel-inner>.item>a>img {
+    height: 100%;
+    min-width: 380px;
 }
