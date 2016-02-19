@@ -56,6 +56,9 @@
     right: 50%;
     left: auto;
 }
+.menu-001  .open>.dropdown-menu {
+    display: block;
+}
 .menu-001 .navbar-nav > li > .dropdown-menu:after, 
 .menu-001 .navbar-nav > li > .dropdown-menu:before {
   border-bottom-color: #ffffff;
