@@ -45,8 +45,6 @@
 .menu-001 .navbar-nav > li > .dropdown-menu {
   background-color: #10294f;
   border-top: 3px solid #2964bc;
-  left: 0;
-  right: auto;
   padding: 15px 13px 15px 20px;
 }
 .menu-001 .dropdown-menu.bullet {

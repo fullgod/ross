@@ -1,44 +1,44 @@
-(function($){
-
-    if ($("ul.dropdown-menu [data-toggle=dropdown]")){
-    alert("Элемент есть");
-    }
-    else { alert("Элемента нет");}
-    
-     $('ul.dropdown-toggle').css( "background", "yellow" );
-
-$(document).ready(function(){
+(function($){ 
+    $(document).ready(function(){
   
-		$('ul.dropdown-toggle [data-toggle=dropdown]').on('click', function(event) {
-		event.preventDefault(); 
-		event.stopPropagation(); 
-		//$(this).parent().siblings().removeClass('open');
-		//$(this).parent().toggleClass('open');
-        $(this).parent().css( "background", "yellow" );
+		$('ul .dropdown-toggle[data-toggle=dropdown]').on('click', function(event) {
+       
+        var menu = $(this).parent().find('.dropdown-menu');
         
-        $(this).parent().addClass('open');
-        var menu = $(this).parent().find("ul");
-        var menupos = menu.offset();
-        if ($menu.hasClass('dropdown-menu')) {
-            menu.css('margin-right', $menu.outerWidth() / -2);
+        //var menu = $(this).parent().find("ul");
+        
+        if (menu.hasClass('pull-center')) {
+            menu.css('margin-right', menu.outerWidth() / -2);
         } 
-        var newpos = menu.width();
-		menu.css({left: newpos});
+        if (menu.hasClass('pull-center')) {
+            menu.css('margin-right', menu.outerWidth() / -2);
+        } 
+        
+        
+        console.log("margin-right:", menu.outerWidth() / -2);
+        console.log("menu.offset:", menu.offset());
+        console.log("menu.width:", menu.width());
+        
 
 		});
+        
+        
+        
         
 	
 	});
     
     
     
+$(document).ready(function(){
+            $('ul .dropdown-menu [data-toggle=dropdown]').on('click', function(event) {
+            event.preventDefault(); 
+            event.stopPropagation(); 
+            $(this).parent().siblings().removeClass('open');
+            $(this).parent().toggleClass('open');
+            });
+            });
 })(jQuery);
 
-
-
-	
-	// $( ".pull-center" ).siblings( ".dropdown-menu" ).css( "background", "yellow" );
-
-	
 	
 	// http://seyferseed.ru/ru/php/fiks-bootstrap-3-navigation-dropdown-submenu-i-realizatsiya-v-zend-framework-2-i-smarty.html#sthash.fddYZea4.dpbs
