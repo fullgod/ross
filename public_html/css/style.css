@@ -50,6 +50,35 @@
 .menu-001 .dropdown-menu.bullet {
     margin-top: 8px;
 }
+.menu-001 .dropdown-menu.bullet:before {
+  width: 0;
+  height: 0;
+  content: '';
+  display: inline-block;
+  position: absolute;
+  border-color: transparent;
+  border-style: solid;
+  -webkit-transform: rotate(360deg);
+  border-width: 0 7px 7px;
+  border-bottom-color: #cccccc;
+  border-bottom-color: rgba(0, 0, 0, 0.15);
+  top: -7px;
+  left: 9px;
+}
+.menu-001 .dropdown-menu.bullet:after {
+  width: 0;
+  height: 0;
+  content: '';
+  display: inline-block;
+  position: absolute;
+  border-color: transparent;
+  border-style: solid;
+  -webkit-transform: rotate(360deg);
+  border-width: 0 6px 6px;
+  border-bottom-color: #ffffff;
+  top: -6px;
+  left: 10px;
+}
 .menu-001 .dropdown-menu.pull-center {
     right: 50%;
     left: auto;
