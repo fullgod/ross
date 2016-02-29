@@ -30,5 +30,5 @@
 
 })(jQuery);
 
-	
+	// https://pixelgrade.com/demos/silk-lite/
 	// http://seyferseed.ru/ru/php/fiks-bootstrap-3-navigation-dropdown-submenu-i-realizatsiya-v-zend-framework-2-i-smarty.html#sthash.fddYZea4.dpbs
